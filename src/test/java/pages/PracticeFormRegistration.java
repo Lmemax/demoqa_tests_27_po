@@ -3,14 +3,12 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 import pages.component.CalendarComponent;
 import pages.component.CheckResultComponent;
-
-import static com.codeborne.selenide.Condition.cssClass;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFormRegistration {
 
-    //private final String endPoint = "/automation-practice-form";
+
     private final  SelenideElement
             firstName = $("#firstName"),
             lastName = $("#lastName"),
@@ -26,8 +24,8 @@ public class PracticeFormRegistration {
             state = $("#state"),
             stateCityWrapper = $("#stateCity-wrapper"),
             city = $("#city"),
-            submit = $("#submit"),
-            userForm = $("#userForm");
+            submit = $("#submit");
+
 
 
     CalendarComponent calendarComponent = new CalendarComponent();
@@ -115,8 +113,6 @@ public class PracticeFormRegistration {
     return this ;
 }
 
-//public PracticeFormRegistration checkValidation(){
-//    userForm.shouldHave(cssClass("was-validated"));
-//    return this;
+
 }
 
